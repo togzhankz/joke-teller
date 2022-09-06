@@ -1,3 +1,23 @@
 html {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background: #45badd;
+}
+
+.container {
+    height: 100vh; 
+    width: 100vw;
+    /* viewport height for dynamicly scaling our project based on size of the viewport/window
+     */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background: url("./robot.gif");
+     background-size: contain; 
+     background-position: left center;
+     /* image will be fully visible to screen */
+}
