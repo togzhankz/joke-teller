@@ -21,7 +21,7 @@ VoiceRSS.speech({
 
 
 const tellJoke = async () => {
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Any?type=single';
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Dark?type=single';
 	try {
 		const response = await fetch(apiUrl); // Fetch request. The Responce variable will not be populated until it has some data fetched from our API
 		const Joke = await response.json();// We are getting json from respose and we are turning that response into JSON object . And we pass that into our global variable. 
@@ -32,5 +32,5 @@ const tellJoke = async () => {
 	}
 }
 
-button.addEventListener('click', tellJoke); // we click  and it runs new Quote
+button.addEventListener('click', tellJoke); // we click  and it runs tell joke
 
